@@ -1,3 +1,11 @@
+// <!--
+// * Author: Alan Murphy
+// * Assignment: BSc Mobile  Web Applications, Digital Skills  Academy
+// * Student ID: D16125812
+// * Date  : 2017/01/09
+// * Ref:  https://angularjs.org/
+// -->
+
 function TodoCtrl($scope) {
   
   $scope.todos = [

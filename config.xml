@@ -1,0 +1,31 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="5.1.1">
+  <name>Todo list with AngularJS</name>
+  <description>A todo list app.</description>
+  <author  email="alan.murphy@digitalskillsacademy.me">Alan Murphy</author>
+  <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+  <!-- My app is only been optimised for potrait orientation -->
+  <preference name="orientation" value="potrait"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <preference name="android-installLocation" value="auto"/>
+  <!-- Custom icon -->
+  <icon src="icon.png"/>
+  <!-- Custom Android Icons -->
+  <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
+  <icon src="www/res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
+  <icon src="www/res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
+  <icon src="www/res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
+  <!-- Custom Android Splash Screens -->
+  <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi"/>
+  <gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi"/>
+  <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi"/>
+  <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi"/>
+  <access origin="*"/>
+  <plugin name="cordova-plugin-whitelist" version="1"/>
+  <!-- Selecting platforms to build for -->
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+</widget>
